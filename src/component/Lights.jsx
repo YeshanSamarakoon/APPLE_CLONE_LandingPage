@@ -6,13 +6,13 @@ const Lights = () => {
     <group name="lights">
       {/**
        * @description Environment is used to create a background environment for the scene
-       * https://github.com/pmndrs/drei?tab=readme-ov-file#environment
+       
        */}
       <Environment resolution={256}>
         <group>
           {/**
            * @description Lightformer used to create custom lights with various shapes and properties in a 3D scene.
-           * https://github.com/pmndrs/drei?tab=readme-ov-file#lightformer
+       
            */}
           <Lightformer
             form="rect"

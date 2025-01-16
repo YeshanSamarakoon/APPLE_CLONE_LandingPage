@@ -1,18 +1,18 @@
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { heroVideo, smallHeroVideo } from '../utils';
+import { heroVideo, smallHeroVideo,exploreVideo } from '../utils';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
 const Hero = () => {
     const [videoSrc, setVideoSrc] = useState(window.innerWidth<760 ?
-        smallHeroVideo : heroVideo)
+        exploreVideo : exploreVideo)
     
         const handleVideoSrcSet =() => {
             if(window.innerWidth< 760){
-                setVideoSrc(smallHeroVideo)
+                setVideoSrc(exploreVideo)
             } else {
-                setVideoSrc(heroVideo)
+                setVideoSrc(exploreVideo)
             }
         }
      
@@ -32,7 +32,7 @@ const Hero = () => {
     }, [])
   return (
     <section className="w-full nav-height bg-black
-    relative">
+    relative mt-40">
          <div className="h-5/6 w-full flex-center flex-col">
          <p id="hero" className="hero-title">Samsung Galaxy S24</p>
          <div className="md:w-10/12 w-9/12">
@@ -45,7 +45,7 @@ const Hero = () => {
         <div  id="cta" className="flex flex-col items-center opacity-0
         translate-y-20">
             <a href="#highlights" className="btn">Buy</a>
-            <p className="font-normal text-xl">From $199/month or $999</p>
+            
         </div>
      </section> 
   )

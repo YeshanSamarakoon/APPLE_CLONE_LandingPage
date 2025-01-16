@@ -13,7 +13,8 @@ import framemv from "/assets/videos/frame.mp4";
 import galaxmv from "/assets/videos/galax2.mp4";
 import galaxmv1 from "/assets/videos/galax2.webm";
 
-import apple from "/assets/images/apple.svg";
+
+import logosam from "/assets/images/logosam.svg";
 import search from "/assets/images/search.svg";
 import bag from "/assets/images/bag.svg";
 import watch from "/assets/images/watch.svg";
@@ -44,7 +45,8 @@ export const frameVideo = framemv;
 export const galax2Video = galaxmv;
 export const galax3Video = galaxmv1;
 
-export const appleImg = apple;
+
+export const samImg2 = logosam;
 export const searchImg = search;
 export const bagImg = bag;
 export const watchImg = watch;

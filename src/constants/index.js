@@ -9,40 +9,36 @@ import {
     yellowImg,
   } from "../utils";
   
-  export const navLists = ["Store", "Mac", "iPhone", "Support"];
+  export const navLists = ["Store", "S24", "S24 Ultra", "Support"];
   
   export const hightlightsSlides = [
     {
       id: 1,
       textLists: [
-        "Enter A17 Pro.",
-        "Game‑changing chip.",
-        "Groundbreaking performance.",
+        
       ],
       video: highlightFirstVideo,
-      videoDuration: 4,
+      videoDuration: 11,
     },
     {
       id: 2,
-      textLists: ["Titanium.", "So strong. So light. So Pro."],
+      textLists: [],
       video: highlightSecondVideo,
-      videoDuration: 5,
+      videoDuration: 3,
     },
     {
       id: 3,
       textLists: [
-        "iPhone 15 Pro Max has the",
-        "longest optical zoom in",
-        "iPhone ever. Far out.",
+        
       ],
       video: highlightThirdVideo,
-      videoDuration: 2,
+      videoDuration: 6,
     },
     {
       id: 4,
-      textLists: ["All-new Action button.", "What will yours do?."],
+      textLists: [],
       video: highlightFourthVideo,
-      videoDuration: 3.63,
+      videoDuration: 3,
     },
   ];
   
@@ -69,8 +65,8 @@ import {
   ];
   
   export const sizes = [
-    { label: '6.1"', value: "small" },
-    { label: '6.7"', value: "large" },
+    { label: 'S24 Ultra"', value: "small" },
+    { label: 'S24"', value: "large" },
   ];
   
   export const footerLinks = [

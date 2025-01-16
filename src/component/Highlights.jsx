@@ -22,7 +22,7 @@ const Highlights = () => {
         <div className="mb-12 w-full md:flex items-end
         justify-between">
             <h1 id="title" className="section-heading">
-                Highlights
+                SCENES
             </h1>
             <div className="flex flex-wrap items-end gap-5">
                 <p className="link">

@@ -5,11 +5,11 @@ const Footer = () => {
   return (
     <footer className="py-5 sm:px-10 px-5">
       <div className="screen-max-width">
-        <div>
-          <p className="font-semibold text-zinc text-xs">
+        <div className="flex justify-center items-center flex-col">
+          <p className="font-semibold text-white text-xs">
             More ways to shop: {' '}
             <span className="underline text-blue">
-            Find an Apple Store {' '}
+            Find an Samsung Store {' '}
             </span>
             or {' '}
             <span className="underline text-blue">
@@ -25,7 +25,7 @@ const Footer = () => {
         <div className="bg-neutral-700 my-5 h-[1px] w-full" />
 
         <div className="flex md:flex-row flex-col md:items-center justify-between">
-          <p className="font-semibold text-gray text-xs">Copright @ 2024 Apple Inc. All rights reserved.</p>
+          <p className="font-semibold text-gray text-xs">Copright @ 2024 Samsung Inc. All rights reserved.</p>
           <div className="flex">
             {footerLinks.map((link, i) => (
               <p key={link} className="font-semibold text-gray text-xs">

@@ -114,26 +114,21 @@ const HowitWorks = () => {
           <div className="hiw-text-container mt-40">
                 <div className="flex flex-1 justify-center flex-col">
                   <p className="hiw-text g_fadeIn">
-                    A17 Pro is an entirely new class of iPhone chip that delivers our {' '}
+                  Get 2x, 3x, 5x and even 10x close-ups with  {' '}
                     <span className="text-white">
-                      best graphic performance by far
+                    optical or optical-quality zoom.13,14
                     </span>.
+                    The new Tele OIS is wider than before, for stabilized shots with less blur.
                   </p>
 
-                  <p className="hiw-text g_fadeIn">
-                   Mobile {' '}
-                    <span className="text-white">
-                      games will look and feel so immersive
-                    </span>,
-                     with incredibly detailed environments and characters.
-                  </p>
+                 
                 </div>
               
 
               <div className="flex-1 flex justify-center flex-col g_fadeIn">
                 <p className="hiw-text">New</p>
-                <p className="hiw-bigtext">Pro-class GPU</p>
-                <p className="hiw-text">with 6 cores</p>
+                <p className="hiw-bigtext">All-day battery to play on </p>
+                <p className="hiw-text">Listen to music up to23 95 hrs</p>
               </div>
               </div>
             </div>
