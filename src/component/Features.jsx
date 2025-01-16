@@ -54,11 +54,12 @@ const Features = () => {
                 </div>
                 <div className="flex-1 flex-center">
                   <p className="feature-text g_text">
-                    iPhone 15 Pro is {' '}
+                    Samsung Galaxy s24 is {' '}
                     <span className="text-white">
-                      the first iPhone to feature an aerospace-grade titanium design
+                    Better scratch resistance with Corning® Gorilla® Armor8
                     </span>,
-                    using the same alloy that spacecrafts use for missions to Mars.
+                    Corning® Gorilla® Armor helps protect your screen from scratches to keep your device looking beautiful,
+                     no matter what your day throws your way.
                   </p>
                 </div>
                 
@@ -68,11 +69,12 @@ const Features = () => {
 
               <div className="flex-1 flex-center">
                   <p className="feature-text g_text">
-                    Titanium has one of the best strength-to-weight ratios of any metal, making these our {' '}
+                  Worry-free water and dust resistance{' '}
                     <span className="text-white">
-                      lightest Pro models ever.
+                    Don't let water dampen your spirits. 
                     </span>
-                    You'll notice the difference the moment you pick one up.
+                    
+                     Galaxy S24 Ultra is IP68 water and dust resistant so you're ready for every adventure, puddles and all.
                   </p>
                 </div>
               <div className="overflow-hidden flex-1 h-[50vh]">

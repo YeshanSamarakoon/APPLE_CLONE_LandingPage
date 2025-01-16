@@ -10,6 +10,8 @@ import highlightThirdmv from "/assets/videos/hightlight-sec.mp4";
 import highlightFourthmv from "/assets/videos/hightlight-fourth.mp4";
 import exploremv from "/assets/videos/explore.mp4";
 import framemv from "/assets/videos/frame.mp4";
+import galaxmv from "/assets/videos/galax2.mp4";
+import galaxmv1 from "/assets/videos/galax2.webm";
 
 import apple from "/assets/images/apple.svg";
 import search from "/assets/images/search.svg";
@@ -39,6 +41,8 @@ export const highlightThirdVideo = highlightThirdmv;
 export const highlightFourthVideo = highlightFourthmv;
 export const exploreVideo = exploremv;
 export const frameVideo = framemv;
+export const galax2Video = galaxmv;
+export const galax3Video = galaxmv1;
 
 export const appleImg = apple;
 export const searchImg = search;

@@ -1,13 +1,27 @@
 import React, { useRef } from 'react'
-import { chipImg, frameImg, explore3Img } from '../utils'
+import { chipImg, frameImg, explore3Img, galax3Video } from '../utils'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap';
 import { animateWithGsap } from '../utils/animation';
 
 const HowitWorks = () => {
   const videoRef = useRef();
-
+  
+  
   useGSAP(() => {
+
+    gsap.to('#galVideo', {
+      scrollTrigger: {
+        trigger: '#galVideo',
+        toggleActions: 'play pause reverse restart',
+        start: '-10% bottom',
+      },
+      onComplete: () => {
+        videoRef.current.play();
+      }
+    })
+
+
     gsap.from('#chip', {
       scrollTrigger: {
         trigger: '#chip',
@@ -29,21 +43,21 @@ const HowitWorks = () => {
 
   return (
     <section className="common-padding">
-      <div className="screen-max-width">
-        <div id="chip" className="flex-center w-full my-20">
-          <img src={chipImg} alt="chip" width={180} height={180} />
-        </div>
+      <div className="screen-max-width" width="50px" >
+        <video playsInline id="galVideo" className="w-full h-full object-cover object-center" preload="none" muted autoPlay ref={videoRef} width="50px">
+                        <source src={galax3Video} type="video/webm" />
+                      </video>
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center mb-40">
           <h2 className="hiw-title">
           CAMERA.
             <br />Stunning photos,
             enhanced with AI.
           </h2>
         </div>
-
+        
         <div className="mt-10 md:mt-80 mb-14">
-          <div className="relative h-full w-full flex-center">
+          <div className="relative h-full w-full flex-center mb-40">
             
             <div className="overflow-hidden flex-1 h-[50vh]">
                               <img src={explore3Img} alt="titanium 2" />
@@ -63,6 +77,7 @@ const HowitWorks = () => {
                  <h1 className="hiw-title2 text-blue">50MP</h1><br />
   
                 </div>
+                
               </div>
               
               <div className="absolute bottom-[80px] left-1/2 h-[150px] w-px bg-white">
@@ -74,15 +89,29 @@ const HowitWorks = () => {
                 
               </div>
               
-              <div className="absolute top-[-10px] right-1/2 h-1/3 w-px bg-white"> </div>
-              <div className="absolute top-[310px] left-[740px] h-[100px] w-px bg-white "></div>
+              <div className="absolute top-[-10px] right-1/2 h-1/3 w-px bg-white">
+              
+                <div className="absolute top-[-1px] left-[80px] transform -translate-y-1/2 -translate-x-full  text-center">
+                 <h1 className="hiw-title2 text-blue">12MP</h1>Ultra Wide <br />
+                  
+                </div>
+                
+              </div>
+              <div className="absolute top-[310px] left-[740px] h-[100px] w-px bg-white ">
+              
+                <div className="absolute bottom-[-80px] left-[80px] transform -translate-y-1/2 -translate-x-full  text-center">
+                 <h1 className="hiw-title2 text-blue">12MP</h1>Selfie Camera <br />
+                  
+                </div>
+                
+              </div>
 
             </div>
           </div>
           <p className="text-gray font-semibold text-center mt-3"></p>
           </div>
 
-          <div className="hiw-text-container ">
+          <div className="hiw-text-container mt-40">
                 <div className="flex flex-1 justify-center flex-col">
                   <p className="hiw-text g_fadeIn">
                     A17 Pro is an entirely new class of iPhone chip that delivers our {' '}
