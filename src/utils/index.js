@@ -26,6 +26,8 @@ import white from "/assets/images/white.jpg";
 import black from "/assets/images/black.jpg";
 import explore1 from "/assets/images/explore1.jpg";
 import explore2 from "/assets/images/explore2.jpg";
+import explore3 from "/assets/images/explore3.jpg";
+import explore4 from "/assets/images/explore4.jpg";
 import chip from "/assets/images/chip.jpeg";
 import frame from "/assets/images/frame.png";
 
@@ -53,5 +55,7 @@ export const whiteImg = white;
 export const blackImg = black;
 export const explore1Img = explore1;
 export const explore2Img = explore2;
+export const explore3Img = explore3;
+export const explore4Img = explore4;
 export const chipImg = chip;
 export const frameImg = frame;

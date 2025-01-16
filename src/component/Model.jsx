@@ -65,8 +65,8 @@ const Model = () => {
   return (
     <section className="common-padding">
         <div className="screnn=max-width">
-            <h1 id="heading" className="section-heading">
-            Take a closer look
+            <h1 id="heading" className="section-heading3 md:text-right">
+            Take it for a spin
             </h1>
 
             <div className="flex flex-col items-center mt-5">

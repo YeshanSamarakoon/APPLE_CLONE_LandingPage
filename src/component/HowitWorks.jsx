@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { chipImg, frameImg, explore2Img } from '../utils'
+import { chipImg, frameImg, explore3Img } from '../utils'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap';
 import { animateWithGsap } from '../utils/animation';
@@ -36,32 +36,53 @@ const HowitWorks = () => {
 
         <div className="flex flex-col items-center">
           <h2 className="hiw-title">
-            A17 Pro chip.
-            <br /> A monster win for gaming.
+          CAMERA.
+            <br />Stunning photos,
+            enhanced with AI.
           </h2>
-
-          <p className="hiw-subtitle">
-            It's here. The biggest redesign in the history of Apple GPUs.
-          </p>
         </div>
 
-        <div className="mt-10 md:mt-20 mb-14">
-          <div className="relative h-full flex-center">
-            <div className="overflow-hidden">
-              <img 
-                src={frameImg}
-                alt="frame"
-                className="bg-transparent relative z-10"
-              />
-            </div>
+        <div className="mt-10 md:mt-80 mb-14">
+          <div className="relative h-full w-full flex-center">
+            
             <div className="overflow-hidden flex-1 h-[50vh]">
-                              <img src={explore2Img} alt="titanium 2" />
+                              <img src={explore3Img} alt="titanium 2" />
+                              <div className="absolute inset- flex flex-col items-center justify-center text-center text-white">
+                <div className="w-full h-px bg-white mb-1"></div>
+                
+              </div>
+              <div className="absolute top-[-140px] left-[500px] h-[300px] w-px bg-white">
+                <div className="absolute top-[-10px] left-1/2 transform -translate-x-1/2 -translate-y-full  text-center">
+                 <h1 className="hiw-title2 text-blue">200MP</h1> Wide-angle & 2x Optical Quality Zoom<br />
+    
+                </div>
+              </div>
+              <div className="absolute bottom-[10px] left-[430px] h-[220px] w-px bg-white">
+              
+                <div className="absolute bottom-[-80px] left-1/2 transform -translate-y-1/2 -translate-x-full  text-center">
+                 <h1 className="hiw-title2 text-blue">50MP</h1><br />
+  
+                </div>
+              </div>
+              
+              <div className="absolute bottom-[80px] left-1/2 h-[150px] w-px bg-white">
+              
+                <div className="absolute bottom-[-220px] left-1/2 transform -translate-x-1/2 -translate-y-full  text-center">
+                 <h1 className="hiw-title2 text-blue">10MP</h1>3x Optical Zoom <br />
+                  
+                </div>
+                
+              </div>
+              
+              <div className="absolute top-[-10px] right-1/2 h-1/3 w-px bg-white"> </div>
+              <div className="absolute top-[310px] left-[740px] h-[100px] w-px bg-white "></div>
+
             </div>
           </div>
-          <p className="text-gray font-semibold text-center mt-3">Honkai: Star Rail</p>
+          <p className="text-gray font-semibold text-center mt-3"></p>
           </div>
 
-          <div className="hiw-text-container">
+          <div className="hiw-text-container ">
                 <div className="flex flex-1 justify-center flex-col">
                   <p className="hiw-text g_fadeIn">
                     A17 Pro is an entirely new class of iPhone chip that delivers our {' '}

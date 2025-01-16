@@ -10,7 +10,7 @@ const App = () => {
  
 
   return (
-    <main className="bg-white">
+    <main className="bg-black">
       <Navbar />
       <Hero/>
       <Highlights/>
