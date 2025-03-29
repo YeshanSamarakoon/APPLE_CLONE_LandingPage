@@ -8,7 +8,7 @@ Title: Samsung S24 Ultra
 
 import * as THREE from 'three';
 import React, { useEffect, useRef } from "react";
-import { useGLTF, useTexture } from "@react-three/drei";
+import { useGLTF, useTexture,useVideoTexture } from "@react-three/drei";
 
  function Model(props) {
   const { nodes, materials } = useGLTF('/models/samsung_s24_ultra.glb')
@@ -31,7 +31,22 @@ import { useGLTF, useTexture } from "@react-three/drei";
       });
     }, [materials, props.item]);
 
-
+    const videoTexture = useVideoTexture('/assets/videos/explore.mp4', {
+        loop: true,
+        muted: true,
+        autoplay: true,
+        crossOrigin: 'Anonymous',
+      });
+    
+    
+      useEffect(() => {
+        if (videoTexture) {
+          const video = videoTexture.image;
+          video.play().catch((error) => {
+            console.error('Error playing video:', error);
+          });
+        }
+      }, [videoTexture]);
   return (
     <group {...props} dispose={null} scale={[0.6, 0.6 ,0.6]}>
     <group position={[0, 0, 0]} scale={1.856}>
@@ -47,7 +62,9 @@ import { useGLTF, useTexture } from "@react-three/drei";
           receiveShadow
           geometry={nodes.Object_6.geometry}
           material={materials.Silver}
-        />
+        >
+
+        </mesh>
       </group>
       <group position={[-0.032, -0.081, 0]} scale={[0.539, 0.539, 0.07]}>
         <mesh
@@ -254,7 +271,13 @@ import { useGLTF, useTexture } from "@react-three/drei";
         position={[-0.375, 0.825, 0.067]}
         rotation={[Math.PI / 2, 0, 0]}
         scale={[0.049, 0.028, 0.049]}
-      />
+      >
+
+            <meshStandardMaterial
+              map={videoTexture} // Video as the base texture
+              transparent={true} // Enable transparency
+            />
+      </mesh>
       <mesh
         castShadow
         receiveShadow
@@ -264,6 +287,8 @@ import { useGLTF, useTexture } from "@react-three/drei";
         rotation={[Math.PI / 2, 0, 0]}
         scale={[0.049, 0.028, 0.049]}
       />
+           
+    
       <mesh
         castShadow
         receiveShadow

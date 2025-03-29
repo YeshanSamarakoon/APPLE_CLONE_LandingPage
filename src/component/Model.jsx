@@ -10,6 +10,7 @@ import { View } from '@react-three/drei';
 import { models, sizes } from "../constants";
 
 import { animateWithGsapTimeline } from '../utils/animation';
+import ModelView2 from './ModelView2';
 
 const Model = () => {
 
@@ -20,6 +21,7 @@ const Model = () => {
         img: yellowImg,
     }
     )
+
 
     //camera control for the model view
 
@@ -65,8 +67,8 @@ const Model = () => {
   return (
     <section className="common-padding">
         <div className="screnn=max-width">
-            <h1 id="heading" className="section-heading3 md:text-right">
-            Take it for a spin
+            <h1 id="heading" className="section-heading3 md:text-center">
+            Spin It Yourself
             </h1>
 
             <div className="flex flex-col items-center mt-5">
@@ -81,7 +83,7 @@ const Model = () => {
                         item={model}
                         size={size}
                     />
-                    <ModelView
+                    <ModelView2
                         index={2}
                         groupRef = {large}
                         gsapType = "view2"

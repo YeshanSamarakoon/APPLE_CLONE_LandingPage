@@ -3,10 +3,10 @@ import { Html, OrbitControls, PerspectiveCamera, View } from "@react-three/drei"
 import * as THREE from 'three'
 import Lights from './Lights';
 import Loader from './Loader';
-import Sampho from './sampho';
+import Sampho2 from './Sampho2';
 import { Suspense } from "react";
 
-const ModelView = ({ index, groupRef, gsapType, controlRef, setRotationState, size, item }) => {
+const ModelView2 = ({ index, groupRef, gsapType, controlRef, setRotationState, size, item }) => {
 
 
 
@@ -38,8 +38,8 @@ const ModelView = ({ index, groupRef, gsapType, controlRef, setRotationState, si
       <group ref={groupRef} name={`${index === 1} ? 'small' : 'large`} position={[0, 0 ,0]}>
         <Suspense fallback={<Loader />}>
         
-          <Sampho
-            scale={index === 1 ? [8, 8, 8] : [10, 10, 10]}
+          <Sampho2
+            scale={index === 1 ? [15, 15, 15] : [14, 14, 14]}
             item={item}
             size={size}
           />
@@ -49,4 +49,4 @@ const ModelView = ({ index, groupRef, gsapType, controlRef, setRotationState, si
   )
 }
 
-export default ModelView 
+export default ModelView2 

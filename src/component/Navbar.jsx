@@ -6,7 +6,7 @@ import { navLists } from "../constants"
      <header className="w-full py-5 sm:px-10 px-5 flex
      justify-between items-center bg-white">
         <nav className="flex w-full screen-max-width">
-        <img src={samImg2} alt="Apple" width={150}
+        <img src={samImg2} alt="sasung" width={150}
             height={180}/>
           <div className="flex flex-1 justify-center
           max-sm:hidden">
@@ -29,7 +29,7 @@ import { navLists } from "../constants"
                     width={18} height={18}/>
                     <img src={bagImg} alt="search" 
                     width={18} height={18}/>
-            </div>  
+            </div>   
              
         </nav>
 
