@@ -264,20 +264,18 @@ import { useGLTF, useTexture,useVideoTexture } from "@react-three/drei";
         scale={[0.022, 0.022, 0.013]}
       />
       <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Object_53.geometry}
-        material={materials.Screen}
-        position={[-0.375, 0.825, 0.067]}
-        rotation={[Math.PI / 2, 0, 0]}
-        scale={[0.049, 0.028, 0.049]}
-      >
-
-            <meshStandardMaterial
-              map={videoTexture} // Video as the base texture
-              transparent={true} // Enable transparency
-            />
-      </mesh>
+  castShadow
+  receiveShadow
+  geometry={nodes.Object_53.geometry}
+  position={[-0.375, 0.825, 0.067]}
+  rotation={[Math.PI / 2, 0, 0]}
+  scale={[0.049, 0.028, 0.049]}
+>
+  <meshStandardMaterial
+    map={videoTexture} // Video as the base texture
+    transparent={true} // Enable transparency
+  />
+</mesh>
       <mesh
         castShadow
         receiveShadow
