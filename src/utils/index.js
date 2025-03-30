@@ -1,15 +1,15 @@
-import hero from "/assets/images/hero.jpeg";
+//import hero from "/assets/images/hero.jpeg";
 
-export const heroImg = hero;
+//export const heroImg = hero;
 
-import hmv from "/assets/videos/hero.mp4";
-import smallmv from "/assets/videos/smallHero.mp4";
+//import hmv from "/assets/videos/hero.mp4";
+//import smallmv from "/assets/videos/smallHero.mp4";
 import highlightFirstmv from "/assets/videos/highlight-first.mp4";
 import highlightSectmv from "/assets/videos/hightlight-third.mp4";
 import highlightThirdmv from "/assets/videos/hightlight-sec.mp4";
 import highlightFourthmv from "/assets/videos/hightlight-fourth.mp4";
 import exploremv from "/assets/videos/explore.mp4";
-import framemv from "/assets/videos/frame.mp4";
+//import framemv from "/assets/videos/frame.mp4";
 import galaxmv from "/assets/videos/galax2.mp4";
 import galaxmv1 from "/assets/videos/galax2.webm";
 
@@ -31,17 +31,17 @@ import explore1 from "/assets/images/explore1.jpg";
 import explore2 from "/assets/images/explore2.jpg";
 import explore3 from "/assets/images/explore3.jpg";
 import explore4 from "/assets/images/explore4.jpg";
-import chip from "/assets/images/chip.jpeg";
-import frame from "/assets/images/frame.png";
+//import chip from "/assets/images/chip.jpeg";
+//import frame from "/assets/images/frame.png";
 
-export const heroVideo = hmv;
-export const smallHeroVideo = smallmv;
+//export const heroVideo = hmv;
+//export const smallHeroVideo = smallmv;
 export const highlightFirstVideo = highlightFirstmv;
 export const highlightSecondVideo = highlightSectmv;
 export const highlightThirdVideo = highlightThirdmv;
 export const highlightFourthVideo = highlightFourthmv;
 export const exploreVideo = exploremv;
-export const frameVideo = framemv;
+//export const frameVideo = framemv;
 export const galax2Video = galaxmv;
 export const galax3Video = galaxmv1;
 
@@ -63,5 +63,5 @@ export const explore1Img = explore1;
 export const explore2Img = explore2;
 export const explore3Img = explore3;
 export const explore4Img = explore4;
-export const chipImg = chip;
-export const frameImg = frame;
+//export const chipImg = chip;
+//export const frameImg = frame;

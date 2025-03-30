@@ -1,6 +1,6 @@
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { heroVideo, smallHeroVideo,exploreVideo } from '../utils';
+import { exploreVideo } from '../utils';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
