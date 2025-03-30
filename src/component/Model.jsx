@@ -12,6 +12,7 @@ import { models, sizes } from "../constants";
 import { animateWithGsapTimeline } from '../utils/animation';
 import ModelView2 from './ModelView2';
 
+
 const Model = () => {
 
     const [size ,setSize]= useState('small');
@@ -71,9 +72,10 @@ const Model = () => {
             Spin It Yourself
             </h1>
 
-            <div className="flex flex-col items-center mt-5">
+            <div className="flex flex-col items-center mt-5 z-1">
+                 
                 <div className="w-full h-[175vh] md:h-[90vh]
-                overflow-hidden relative">
+                overflow-hidden relative m-0">
                     <ModelView
                         index={1}
                         groupRef = {small}
@@ -92,7 +94,7 @@ const Model = () => {
                         item={model}
                         size={size}
                     />
-
+                        
                     <Canvas
                         style={{
 
@@ -109,8 +111,12 @@ const Model = () => {
                         }
                     >
                         <View.Port/>
-                    </Canvas>         
+                        
+                    </Canvas>    
+                   
+                    
                 </div>
+                        
                 <div className="mx-auto w-full">
                         <p className="text-sm font-light text-center
                         mb-5">{model.title}</p>
@@ -143,9 +149,10 @@ const Model = () => {
                         </div>
 
                 </div>
+                
             </div>
         </div>
-
+                                    
     </section>
   )
 }

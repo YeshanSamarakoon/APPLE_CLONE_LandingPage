@@ -3,6 +3,8 @@ import { explore3Img, galax3Video } from '../utils'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap';
 import { animateWithGsap } from '../utils/animation';
+import  ShootingStars  from "../component/ui/shootingStar";
+import  StarsBackground from "../component/ui/starsBg";
 
 const HowitWorks = () => {
   const videoRef = useRef();
@@ -132,6 +134,8 @@ const HowitWorks = () => {
               </div>
               </div>
             </div>
+            <ShootingStars style={{ zIndex: -1 }} />
+<StarsBackground style={{ zIndex: -1 }} />
     </section>
   )
 }
