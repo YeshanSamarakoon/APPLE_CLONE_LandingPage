@@ -46,7 +46,7 @@ const HowitWorks = () => {
   return (
     <section className="common-padding">
       <div className="screen-max-width" width="50px" >
-        <video playsInline id="galVideo" className="w-full h-full object-cover object-center" preload="none" muted autoPlay ref={videoRef} width="50px">
+        <video playsInline id="galVideo" className="w-full h-full object-cover object-center" preload="none" muted autoPlay ref={videoRef} loop key={videoRef} width="50px">
                         <source src={galax3Video} type="video/webm" />
                       </video>
 
@@ -134,8 +134,8 @@ const HowitWorks = () => {
               </div>
               </div>
             </div>
-            <ShootingStars style={{ zIndex: -1 }} />
-<StarsBackground style={{ zIndex: -1 }} />
+            <ShootingStars />
+            <StarsBackground />
     </section>
   )
 }

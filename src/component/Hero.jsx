@@ -31,20 +31,20 @@ const Hero = () => {
 
     }, [])
   return (
-    <section className="w-full nav-height bg-black
+    <section className="w-full nav-height bg-gray
     relative mt-40">
          <div className="h-5/6 w-full flex-center flex-col">
          <p id="hero" className="hero-title">Samsung Galaxy S24</p>
          <div className="md:w-10/12 w-9/12">
          <video className="pointer-events-none" autoPlay muted playsInline={true} 
-         key={videoSrc}>
+         loop key={videoSrc}>
                 <source src={videoSrc} type="video/mp4"/>
          </video>
          </div>
          </div>
         <div  id="cta" className="flex flex-col items-center opacity-0
         translate-y-20">
-            <a href="#highlights" className="btn">Buy</a>
+            <a href="#highlights" className="btn">CHECK</a>
             
         </div>
      </section> 

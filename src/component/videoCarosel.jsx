@@ -153,7 +153,7 @@ const VideoCarousel = () => {
                 <video
                   id="video"
                   playsInline={true}
-                  className={`${
+                  className={`${ 
                     list.id === 2 && "translate-x-44"
                   } pointer-events-none`}
                   preVideoload="auto"
