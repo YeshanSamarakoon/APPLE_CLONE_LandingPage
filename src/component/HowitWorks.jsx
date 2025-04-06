@@ -8,8 +8,9 @@ import  StarsBackground from "../component/ui/starsBg";
 
 const HowitWorks = () => {
   const videoRef = useRef();
-  
-  
+  const imageRef = useRef();
+  const revealRef = useRef();
+
   useGSAP(() => {
 
     gsap.to('#galVideo', {
@@ -22,7 +23,6 @@ const HowitWorks = () => {
         videoRef.current.play();
       }
     })
-
 
     gsap.from('#chip', {
       scrollTrigger: {
@@ -41,6 +41,33 @@ const HowitWorks = () => {
       duration: 1,
       ease: 'power2.inOut'
     })
+
+    gsap.to(imageRef.current, {
+      scrollTrigger: {
+        trigger: imageRef.current,
+        start: '50% bottom',
+        end: '50% top',
+        toggleActions: 'play pause reverse restart',
+      },
+      scale: 1.2,
+      opacity: 1,
+      duration: 1.5,
+      ease: 'power2.inOut'
+    })
+
+    gsap.to(revealRef.current, {
+      scrollTrigger: {
+        trigger: revealRef.current,
+        start: '50% bottom',
+        end: '50% top',
+        toggleActions: 'play pause reverse restart',
+      },
+      opacity: 1,
+      scale: 1,
+      duration: 1.5,
+      ease: 'power2.inOut'
+    })
+
   }, []);
 
   return (
@@ -62,7 +89,7 @@ const HowitWorks = () => {
           <div className="relative h-full w-full flex-center mb-10">
             
             <div className="overflow-hidden flex-1 h-full w-full relative">
-                              <img src={explore3Img} alt="titanium 2" />
+                              <img src={explore3Img} alt="titanium 2" ref={imageRef} />
                               <div className="absolute inset- flex flex-col items-center justify-center text-center text-white">
                 <div className="w-full h-px bg-white mb-1"></div>
                 
@@ -74,7 +101,7 @@ const HowitWorks = () => {
           <p className="text-gray font-semibold text-center mt-3"></p>
           </div>
 
-          <div className="hiw-text-container mt-40">
+          <div className="hiw-text-container mt-40" ref={revealRef}>
                 <div className="flex flex-1 justify-center flex-col">
                   <p className="hiw-text g_fadeIn">
                   Get 2x, 3x, 5x and even 10x close-ups with  {' '}
@@ -85,6 +112,7 @@ const HowitWorks = () => {
                   </p>
 
                  
+
                 </div>
               
 

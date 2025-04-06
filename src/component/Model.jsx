@@ -11,7 +11,7 @@ import { models, sizes } from "../constants";
 
 import { animateWithGsapTimeline } from '../utils/animation';
 import ModelView2 from './ModelView2';
-
+import stargo from "../../public/assets/videos/star3.mp4";
 
 const Model = () => {
 
@@ -82,7 +82,7 @@ const Model = () => {
                         muted
                         loop
                     >
-                        <source src="background-video.mp4" type="video/mp4" />
+                        <source src={stargo} type="video/mp4" />
                     </video>
                     <ModelView
                         index={1}
