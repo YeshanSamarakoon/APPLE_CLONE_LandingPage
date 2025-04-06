@@ -1,168 +1,151 @@
-import { useGSAP } from '@gsap/react'
-import React, { useState, useRef, useEffect } from 'react'
-import {gsap} from 'gsap'
-import ModelView from './ModelView'
+import { useGSAP } from '@gsap/react';
+import React, { useState, useRef, useEffect } from 'react';
+import { gsap } from 'gsap';
+import ModelView from './ModelView';
+import ModelView2 from './ModelView2';
 import { yellowImg } from '../utils';
 
 import * as THREE from 'three';
 import { Canvas } from '@react-three/fiber';
 import { View } from '@react-three/drei';
-import { models, sizes } from "../constants";
+import { models, sizes } from '../constants';
 
 import { animateWithGsapTimeline } from '../utils/animation';
-import ModelView2 from './ModelView2';
-import stargo from "../../public/assets/videos/star3.mp4";
+import stargo from '../../public/assets/videos/star3.mp4';
 
 const Model = () => {
+  const [size, setSize] = useState('small');
+  const [model, setModel] = useState({
+    title: 'Galaxy S24 Ultra',
+    color: ['#8F8A81', '#FFE7B9', '#6F6C64'],
+    img: yellowImg,
+  });
 
-    const [size ,setSize]= useState('small');
-    const [model, setModel] = useState({
-        title: 'Galaxy S24 Ultra',
-        color : ['#8F8A81', '#FFE7B9', '#6F6C64'],
-        img: yellowImg,
+  const CameraControlSmall = useRef(null);
+  const CameraControlLarge = useRef(null);
+
+  const small = useRef(new THREE.Group());
+  const large = useRef(new THREE.Group());
+
+  const [smallRotation, setSmallRotation] = useState(0);
+  const [LargeRotation, setLargeRotation] = useState(0);
+
+  const tl = gsap.timeline();
+
+  useEffect(() => {
+    if (size === 'large') {
+      animateWithGsapTimeline(tl, small, smallRotation, '#view1', '#view2', {
+        transform: 'translateX(-100%)',
+        duration: 2,
+      });
     }
-    )
 
+    if (size === 'small') {
+      animateWithGsapTimeline(tl, large, LargeRotation, '#view2', '#view1', {
+        transform: 'translateX(0)',
+        duration: 2,
+      });
+    }
+  }, [size]);
 
-    //camera control for the model view
+  useGSAP(() => {
+    gsap.to('#heading', { y: 0, opacity: 1 });
+  }, []);
 
-    const CameraControlSmall = useRef(null);
-    const CameraControlLarge = useRef(null);
-
-    //model
-    const small = useRef(new THREE.Group());
-    const large = useRef(new THREE.Group());
-
-    //rotaion
-    const [smallRotation, setSmallRotation] = useState(0);
-    const [LargeRotation, setLargeRotation] = useState(0);
-
-
-    const tl = gsap.timeline();
-
-    useEffect(() => {
-        if(size === 'large'){
-
-            animateWithGsapTimeline(tl,small, smallRotation,
-            '#view1', '#view2', {   
-
-                transform: 'translateX(-100%)',
-                duration: 2
-            })
-
-        }
-
-        if(size === 'small'){
-            animateWithGsapTimeline(tl,large,LargeRotation,
-                '#view2', '#view1', {   
-    
-                    transform: 'translateX(0)',
-                    duration: 2
-                })
-        }
-    },[size])
-
-    useGSAP(() => {
-        gsap.to('#heading', { y: 0, opacity: 1 });
-      }, []);
   return (
     <section className="common-padding">
-        <div className="screnn=max-width">
-            <h1 id="heading" className="section-heading3 md:text-center">
-            Spin It Yourself
-            </h1>
+      <div className="screnn=max-width">
+        <h1 id="heading" className="section-heading3 md:text-center">
+          Spin It Yourself
+        </h1>
 
-            <div className="flex flex-col items-center mt-5 z-1">
-                 
-                <div className="w-full h-[175vh] md:h-[90vh]
-                overflow-hidden relative m-0">
-                     <video 
-                        className="absolute top-0 left-0 w-full h-full object-cover"
-                        autoPlay
-                        muted
-                        loop
-                    >
-                        <source src={stargo} type="video/mp4" />
-                    </video>
-                    <ModelView
-                        index={1}
-                        groupRef = {small}
-                        gsapType = "view1"
-                        controlRef = {CameraControlSmall}
-                        setRotationState ={setSmallRotation}
-                        item={model}
-                        size={size}
-                    />
-                    <ModelView2
-                        index={2}
-                        groupRef = {large}
-                        gsapType = "view2"
-                        controlRef = {CameraControlLarge}
-                        setRotationState ={setLargeRotation}
-                        item={model}
-                        size={size}
-                    />
-                        
-                    <Canvas
-                        style={{
+        <div className="flex flex-col items-center mt-5 z-1">
+          <div
+            className="w-full h-[120vh] sm:h-[140vh] md:h-[90vh] overflow-hidden relative m-0"
+          >
+            <video
+              className="absolute top-0 left-0 w-full h-full object-cover"
+              autoPlay
+              muted
+              loop
+            >
+              <source src={stargo} type="video/mp4" />
+            </video>
 
-                            position: 'fixed',
-                            top: 0,
-                            bottom: 0,
-                            left: 0,
-                            right: 0,
-                            overflow: 'hidden'
-                        }}
-                        
-                        eventSource={document.getElementById
-                            ('root')
-                        }
-                    >
-                        <View.Port/>
-                        
-                    </Canvas>    
-                   
-                    
-                </div>
-                        
-                <div className="mx-auto w-full">
-                        <p className="text-sm font-light text-center
-                        mb-5">{model.title}</p>
-                        <div className="flex-center">
-                        <ul className="color-container">
-                            {models.map((item, i) => (
+            <ModelView
+              index={1}
+              groupRef={small}
+              gsapType="view1"
+              controlRef={CameraControlSmall}
+              setRotationState={setSmallRotation}
+              item={model}
+              size={size}
+              scale={window.innerWidth < 768 ? 0.6 : 1}
+            />
+            <ModelView2
+              index={2}
+              groupRef={large}
+              gsapType="view2"
+              controlRef={CameraControlLarge}
+              setRotationState={setLargeRotation}
+              item={model}
+              size={size}
+              scale={window.innerWidth < 768 ? 0.6 : 1}
+            />
 
-                                <li key={i} className="w-6 h-6
-                                rounded-full mx-2 cursor-pointer" 
-                                style={{ backgroundColor: item.color[0] }}
-                                onClick={() => setModel(item)}/> 
+            <Canvas
+              style={{
+                position: 'fixed',
+                top: 0,
+                bottom: 0,
+                left: 0,
+                right: 0,
+                overflow: 'hidden',
+              }}
+              eventSource={document.getElementById('root')}
+            >
+              <View.Port />
+            </Canvas>
+          </div>
 
-                            ))}
-                            
-                            </ul>   
-                            <button className="size-btn-container">
-                                {sizes.map(({label, value}) => (
+          <div className="mx-auto w-full">
+            <p className="text-sm font-light text-center mb-5">
+              {model.title}
+            </p>
+            <div className="flex-center">
+              <ul className="color-container">
+                {models.map((item, i) => (
+                  <li
+                    key={i}
+                    className="w-6 h-6 rounded-full mx-2 cursor-pointer"
+                    style={{ backgroundColor: item.color[0] }}
+                    onClick={() => setModel(item)}
+                  />
+                ))}
+              </ul>
 
-                                        <span key={label} className="size-btn"
-                                        style={{backgroundColor: size ===
-                                            value ? 'white' : 'transparent' ,
-                                            color: size === value ? 'black' : 'white'
-                                        }} onClick={() => setSize
-                                            (value)}>
-                                            {label}
-                                        </span>
-
-                                ))}
-                            </button>
-                        </div>
-
-                </div>
-                
+              <button className="size-btn-container">
+                {sizes.map(({ label, value }) => (
+                  <span
+                    key={label}
+                    className="size-btn"
+                    style={{
+                      backgroundColor:
+                        size === value ? 'white' : 'transparent',
+                      color: size === value ? 'black' : 'white',
+                    }}
+                    onClick={() => setSize(value)}
+                  >
+                    {label}
+                  </span>
+                ))}
+              </button>
             </div>
+          </div>
         </div>
-                                    
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default Model
+export default Model;
