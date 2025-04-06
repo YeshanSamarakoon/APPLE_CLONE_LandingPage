@@ -7,7 +7,7 @@
 
 ## 🌟 Preview
 <div align="center">
-  <img src="./assets/3d-interaction.gif" width="800" alt="3D Phone Rotation Demo">
+  <img src="./assets/mocik-copy.png" width="800" alt="3D Phone Rotation Demo">
   <p><em>Interactive 3D model with realistic materials</em></p>
 </div>
 
@@ -18,11 +18,11 @@ This project redefines product presentation by combining:
 - **Cross-device performance optimization**
 
 ## ✨ Key Features
-| Feature | Preview |
-|---------|---------|
-| **60FPS 3D Model** | ![3D Demo](./assets/3d-demo.jpg) |
-| **Dark/Light Mode** | ![Theme Switch](./assets/theme-switch.gif) |
-| **Mobile Responsive** | ![Mobile View](./assets/mobile-view.jpg) |
+| Feature | 
+|---------|
+| **60FPS 3D Model** |
+| **Dark/Light Mode** | 
+| **Mobile Responsive** | 
 
 ## 🛠 Tech Stack
 <div align="center">
