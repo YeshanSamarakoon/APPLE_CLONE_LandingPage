@@ -1,7 +1,7 @@
 # 📱 Samsung Galaxy S24 Ultra Concept Landing Page 🔥
 
 [![Live Demo](https://img.shields.io/badge/Demo-%F0%9F%94%A5_Live_Site-blue)](https://samsungs24concept.netlify.app)
-![Project Banner](./assets/banner.jpg)
+![Project Banner](./assets/image.jpg)
 
 *A cinematic web experience showcasing flagship smartphone features through immersive 3D interactions*
 
