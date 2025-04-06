@@ -7,7 +7,7 @@
 
 ## 🌟 Preview
 <div align="center">
-  <img src="./assets/mocik-copy.png" width="800" alt="3D Phone Rotation Demo">
+  <img src="../assets/image/mocik-copy.png" width="800" alt="3D Phone Rotation Demo">
   <p><em>Interactive 3D model with realistic materials</em></p>
 </div>
 
