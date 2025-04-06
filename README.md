@@ -1,13 +1,12 @@
 # 📱 Samsung Galaxy S24 Ultra Concept Landing Page 🔥
 
 [![Live Demo](https://img.shields.io/badge/Demo-%F0%9F%94%A5_Live_Site-blue)](https://samsungs24concept.netlify.app)
-![Project Banner](./assets/image.jpg)
-
+![Project Banner](../public/assets/images/mocik-copy.png)
 *A cinematic web experience showcasing flagship smartphone features through immersive 3D interactions*
 
 ## 🌟 Preview
 <div align="center">
-  <img src="../assets/image/mocik-copy.png" width="800" alt="3D Phone Rotation Demo">
+  <img src="../public/assets/images/mocik-copy.png" width="800" alt="3D Phone Rotation Demo">
   <p><em>Interactive 3D model with realistic materials</em></p>
 </div>
 
