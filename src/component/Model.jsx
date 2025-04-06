@@ -76,6 +76,14 @@ const Model = () => {
                  
                 <div className="w-full h-[175vh] md:h-[90vh]
                 overflow-hidden relative m-0">
+                     <video 
+                        className="absolute top-0 left-0 w-full h-full object-cover"
+                        autoPlay
+                        muted
+                        loop
+                    >
+                        <source src="background-video.mp4" type="video/mp4" />
+                    </video>
                     <ModelView
                         index={1}
                         groupRef = {small}
