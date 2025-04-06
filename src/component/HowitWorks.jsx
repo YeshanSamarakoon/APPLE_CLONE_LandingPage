@@ -59,54 +59,15 @@ const HowitWorks = () => {
         </div>
         
         <div className="mt-10 md:mt-80 mb-14">
-          <div className="relative h-full w-full flex-center mb-40">
+          <div className="relative h-full w-full flex-center mb-10">
             
-            <div className="overflow-hidden flex-1 h-[50vh]">
+            <div className="overflow-hidden flex-1 h-full w-full relative">
                               <img src={explore3Img} alt="titanium 2" />
                               <div className="absolute inset- flex flex-col items-center justify-center text-center text-white">
                 <div className="w-full h-px bg-white mb-1"></div>
                 
               </div>
-              <div className="absolute top-[-140px] left-[500px] h-[300px] w-px bg-white">
-                <div className="absolute top-[-10px] left-1/2 transform -translate-x-1/2 -translate-y-full  text-center">
-                 <h1 className="hiw-title2 text-blue">200MP</h1> Wide-angle & 2x Optical Quality Zoom<br />
-    
-                </div>
-              </div>
-              <div className="absolute bottom-[10px] left-[430px] h-[220px] w-px bg-white">
-              
-                <div className="absolute bottom-[-80px] left-1/2 transform -translate-y-1/2 -translate-x-full  text-center">
-                 <h1 className="hiw-title2 text-blue">50MP</h1><br />
-  
-                </div>
-                
-              </div>
-              
-              <div className="absolute bottom-[80px] left-1/2 h-[150px] w-px bg-white">
-              
-                <div className="absolute bottom-[-220px] left-1/2 transform -translate-x-1/2 -translate-y-full  text-center">
-                 <h1 className="hiw-title2 text-blue">10MP</h1>3x Optical Zoom <br />
-                  
-                </div>
-                
-              </div>
-              
-              <div className="absolute top-[-10px] right-1/2 h-1/3 w-px bg-white">
-              
-                <div className="absolute top-[-1px] left-[80px] transform -translate-y-1/2 -translate-x-full  text-center">
-                 <h1 className="hiw-title2 text-blue">12MP</h1>Ultra Wide <br />
-                  
-                </div>
-                
-              </div>
-              <div className="absolute top-[310px] left-[740px] h-[100px] w-px bg-white ">
-              
-                <div className="absolute bottom-[-80px] left-[80px] transform -translate-y-1/2 -translate-x-full  text-center">
-                 <h1 className="hiw-title2 text-blue">12MP</h1>Selfie Camera <br />
-                  
-                </div>
-                
-              </div>
+             
 
             </div>
           </div>

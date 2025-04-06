@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { navLinks } from "../constants";
 import { gsap } from "gsap";
+import { Search, ShoppingBag } from "lucide-react";
 
 const NavItems = ({ onClick = () => {} }) => {
   return (
@@ -63,22 +64,35 @@ const Navbar = () => {
             <NavItems />
           </nav>
 
-          {/* Mobile Menu Toggle */}
-          <button
-            onClick={toggleMenu}
-            className="sm:hidden text-white hover:text-neutral-600 focus:outline-none z-20"
-            aria-label="Toggle menu"
-          >
-            <img
-              src={
-                isOpen
-                  ? "/public/assets/images/close.svg"
-                  : "/public/assets/images/menu.svg"
-              }
-              alt="toggle menu"
-              className="w-6 h-6"
-            />
-          </button>
+          {/* Right-side icons */}
+          <div className="flex items-center gap-4 z-20">
+            {/* Search Icon */}
+            <button aria-label="Search" className="text-black hover:text-neutral-600">
+              <Search className="w-5 h-5" />
+            </button>
+
+            {/* Store Icon */}
+            <button aria-label="Store" className="text-black hover:text-neutral-600">
+              <ShoppingBag className="w-5 h-5" />
+            </button>
+
+            {/* Mobile Menu Toggle */}
+            <button
+              onClick={toggleMenu}
+              className="sm:hidden text-black hover:text-neutral-600 focus:outline-none"
+              aria-label="Toggle menu"
+            >
+              <img
+                src={
+                  isOpen
+                    ? "/public/assets/images/close.svg"
+                    : "/public/assets/images/menu.svg"
+                }
+                alt="toggle menu"
+                className="w-6 h-6"
+              />
+            </button>
+          </div>
         </div>
       </div>
 
