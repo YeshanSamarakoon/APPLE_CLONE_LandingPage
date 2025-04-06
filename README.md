@@ -1,45 +1,58 @@
-
-# 📱 Samsung Galaxy S24 Ultra Concept Landing Page🔥
-
+# 📱 Samsung Galaxy S24 Ultra Concept Landing Page 🔥
 
 [![Live Demo](https://img.shields.io/badge/Demo-%F0%9F%94%A5_Live_Site-blue)](https://samsungs24concept.netlify.app)
+![Project Banner](./assets/banner.jpg)
 
-# About
+*A cinematic web experience showcasing flagship smartphone features through immersive 3D interactions*
 
-A Next-Gen Smartphone Showcase
-This Samsung Galaxy S24 Ultra concept landing page demonstrates how modern web technologies can create immersive product experiences beyond traditional spec sheets
+## 🌟 Preview
+<div align="center">
+  <img src="./assets/3d-interaction.gif" width="800" alt="3D Phone Rotation Demo">
+  <p><em>Interactive 3D model with realistic materials</em></p>
+</div>
 
-## 🧠 Technical Deep Dive  
-- Implemented progressive loading for 3D assets (GLTF)  
-- Custom shaders for material realism  
-- Intersection Observer API for performance optimization  
+## 🚀 About
+This project redefines product presentation by combining:
+- **Photorealistic 3D visualization** (Three.js)
+- **Cinematic scroll storytelling** (GSAP)
+- **Cross-device performance optimization**
 
-## 🎨 Design Philosophy  
-- Minimalist UI that doesn't compete with 3D visuals  
-- Motion design principles applied to scroll journey  
-- Accessibility-focused color contrast ratios  
+## ✨ Key Features
+| Feature | Preview |
+|---------|---------|
+| **60FPS 3D Model** | ![3D Demo](./assets/3d-demo.jpg) |
+| **Dark/Light Mode** | ![Theme Switch](./assets/theme-switch.gif) |
+| **Mobile Responsive** | ![Mobile View](./assets/mobile-view.jpg) |
 
-## ✨ **Why This Project Power Like Siao**
-- **3D Phone Model** - Rotate anyhow also can (desktop/mobile all can!)
-- **Cinematic Scrolling** - Animate until like movie like that
-- **Dark/Light Mode** - Auto-change follow your device setting
-- **60FPS Smooth Like Butter** - Even budget phone also no lag
+## 🛠 Tech Stack
+<div align="center">
 
-## 🛠 **Tech Stack (All The Satki Tools)**
-| Tool | What It Do |
-|------|------------|
-| React.js (Vite) | Make everything damn fast |
-| Three.js + R3F | 3D power until can touch |
-| GSAP ScrollTrigger | Animation swee swee |
-| Tailwind CSS | No need headache styling |
-| Framer Motion | Buttons got feel one |
+| Layer | Technology | Purpose |
+|-------|------------|---------|
+| **Core** | React (Vite) | Blazing fast foundation |
+| **3D** | Three.js + R3F | Life-like phone rendering |
+| **Motion** | GSAP + Framer | Buttery animations |
+| **UI** | Tailwind CSS | Responsive styling |
+| **QA** | Lighthouse | Performance auditing |
 
-## 🚀 **How To Run Ownself**
+</div>
+
+## 🧠 Technical Highlights
+- **GLTF Compression:** 3D model optimized to 400KB
+- **Adaptive Loading:** WebGL fallback for low-end devices
+- **Scroll Magic:** 20+ synchronized animations
+- **PWA Ready:** Offline-capable implementation
+
+## 🚀 Installation
 ```bash
+# Clone the repository
 git clone https://github.com/yourusername/s24-concept.git
+
+# Navigate to project directory
 cd s24-concept
+
+# Install dependencies
 npm install
+
+# Start development server
 npm run dev
-
-
-    
