@@ -3,6 +3,17 @@ import { navLinks } from "../constants";
 import { gsap } from "gsap";
 import { Search, ShoppingBag } from "lucide-react";
 
+import closeM from "../../public/assets/images/close.png";
+import menuM from "../../public/assets/images/menu.png";
+
+/*************  ✨ Windsurf Command ⭐  *************/
+/**
+ * @function
+ * @param {object} props Component props
+ * @param {function} [props.onClick = () => {}] Click handler
+ * @returns {JSX.Element} List of navigation items
+ */
+/*******  db3c555d-0563-4ec2-a403-c9bb6cacdbbb  *******/
 const NavItems = ({ onClick = () => {} }) => {
   return (
     <ul className="space-y-4 sm:space-y-0 sm:flex sm:gap-8">
@@ -85,11 +96,11 @@ const Navbar = () => {
               <img
                 src={
                   isOpen
-                    ? "/public/assets/images/close.svg"
-                    : "/public/assets/images/menu.svg"
+                    ? {closeM}
+                    : {menuM}
                 }
                 alt="toggle menu"
-                className="w-6 h-6"
+                className="w-5 h-5"
               />
             </button>
           </div>

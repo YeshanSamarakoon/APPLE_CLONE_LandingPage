@@ -81,6 +81,7 @@ const Model = () => {
               item={model}
               size={size}
               scale={window.innerWidth < 768 ? 0.6 : 1}
+              
             />
             <ModelView2
               index={2}

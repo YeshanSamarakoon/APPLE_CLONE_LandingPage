@@ -27,7 +27,23 @@ import {
     },
   
   ];
-  
+
+  const models2 = [
+    {
+      title: 'Galaxy S24 Ultra',
+      color: ['#8F8A81', '#FFE7B9', '#6F6C64'],
+      img: yellowImg,
+      originX: 100,
+      originY: 200,
+    },
+    {
+      title: 'Galaxy S24',
+      color: ['#3498db', '#f1c40f', '#e74c3c'],
+      img: blueImg,
+      originX: 200,
+      originY: 300,
+    },
+  ];
   
   export const hightlightsSlides = [
     {

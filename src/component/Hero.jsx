@@ -34,7 +34,7 @@ const Hero = () => {
     <section className="w-full nav-height bg-black
     relative mt-40">
          <div className="h-5/6 w-full flex-center flex-col">
-         <p id="hero" className="hero-title">Samsung Galaxy S24</p>
+         <p id="hero" className="hero-title">Samsung Galaxy S24 ULTRA</p>
          <div className="md:w-10/12 w-9/12">
          <video className="pointer-events-none" autoPlay muted playsInline={true} 
          loop key={videoSrc}>
