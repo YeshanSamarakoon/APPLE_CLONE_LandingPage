@@ -3,11 +3,6 @@
 [![Live Demo](https://img.shields.io/badge/Demo-%F0%9F%94%A5_Live_Site-blue)](https://samsungs24concept.netlify.app)
 ![Project Banner]![Image](https://github.com/user-attachments/assets/61dffad3-7458-4493-a65f-7a95b4e3a108)
 
-## 🌟 Preview
-<div align="center">
-  <img src="../public/assets/images/mocik-copy.png" width="800" alt="3D Phone Rotation Demo">
-  <p><em>Interactive 3D model with realistic materials</em></p>
-</div>
 
 ## 🚀 About
 This project redefines product presentation by combining:
