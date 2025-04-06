@@ -9,9 +9,6 @@ import { Suspense } from "react";
 const ModelView2 = ({ index, groupRef, gsapType, controlRef, setRotationState, size, item }) => {
 
 
-
-
-  
   return (
     <View
       index={index}

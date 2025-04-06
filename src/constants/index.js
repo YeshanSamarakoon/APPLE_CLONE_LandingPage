@@ -8,8 +8,26 @@ import {
     whiteImg,
     yellowImg,
   } from "../utils";
+ 
+ export const navLinks = [
+    {
+      id: 1,
+      name: 's24+',
+      href: '#home',
+    },
+    {
+      id: 2,
+      name: 'S24 Ultra',
+      href: '#about',
+    },
+    {
+      id: 3,
+      name: 'Support',
+      href: '#work',
+    },
   
-  export const navLists = ["Store", "S24", "S24 Ultra", "Support"];
+  ];
+  
   
   export const hightlightsSlides = [
     {
@@ -57,7 +75,7 @@ import {
     },
     {
       id: 3,
-      title: "Galaxy S24 Titanium Green",
+      title: "Galaxy S24 Titanium Orange",
       color: ["#ff9248", "#ffffff", "#C9C8C2"],
       img: whiteImg,
     },
