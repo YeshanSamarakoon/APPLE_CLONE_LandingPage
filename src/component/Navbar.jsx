@@ -70,12 +70,12 @@ const Navbar = () => {
           {/* Right-side icons */}
           <div className="flex items-center gap-4 z-20">
             {/* Search Icon */}
-            <button aria-label="Search" className="text-black hover:text-neutral-600">
+            <button aria-label="Search" className="text-black hover:text-neutral-500">
               <Search className="w-5 h-5" />
             </button>
 
             {/* Store Icon */}
-            <button aria-label="Store" className="text-black hover:text-neutral-600">
+            <button aria-label="Store" className="text-black hover:text-neutral-400">
               <ShoppingBag className="w-5 h-5" />
             </button>
 
