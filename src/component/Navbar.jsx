@@ -75,7 +75,7 @@ const Navbar = () => {
             </button>
 
             {/* Store Icon */}
-            <button aria-label="Store" className="text-black hover:text-neutral-400">
+            <button aria-label="Store" className="text-black hover:text-neutral-500">
               <ShoppingBag className="w-5 h-5" />
             </button>
 
